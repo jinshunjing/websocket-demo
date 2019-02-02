@@ -24,6 +24,9 @@ public class TickerTest {
             public void call(Object... args) {
                 System.out.println("CONNECTED");
 
+                // 先订阅再接收
+                //socket.emit("subscribe", "vip");
+
                 TickerObject to = new TickerObject();
                 to.setSymbol("BTC");
                 to.setPrice(3443.5);
